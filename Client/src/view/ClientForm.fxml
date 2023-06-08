@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="629.0" prefWidth="400.0" style="-fx-background-color: #FDF4F5;">
+         <children>
+            <TextField fx:id="txtTyping" layoutX="16.0" layoutY="521.0" prefHeight="59.0" prefWidth="319.0" promptText="Enter Message" style="-fx-background-color: rgba(217,217,217,0); -fx-border-color: #F3E8FF; -fx-background-color: #F3E8FF; -fx-background-radius: 90;" />
+            <ImageView fx:id="emojiBtn" disable="true" fitHeight="31.0" fitWidth="31.0" layoutX="234.0" layoutY="535.0">
+               <image>
+                  <Image url="@../../assets/ImogiIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblName" layoutX="17.0" layoutY="16.0" prefHeight="26.0" prefWidth="366.0" style="-fx-background-color: #b6c8e4; -fx-background-radius: 10;" textFill="#b6c8e4" />
+            <ImageView disable="true" fitHeight="31.0" fitWidth="31.0" layoutX="283.0" layoutY="536.0">
+               <image>
+                  <Image url="@../../assets/ImageIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="31.0" fitWidth="31.0" layoutX="340.0" layoutY="535.0">
+               <image>
+                  <Image url="@../../assets/SendIcon.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="327.0" layoutY="526.0" onAction="#sendOnAction" opacity="0.0" prefHeight="49.0" prefWidth="57.0" />
+            <JFXButton layoutX="270.0" layoutY="526.0" onAction="#photoSendOnAction" opacity="0.0" prefHeight="49.0" prefWidth="57.0" />
+            <JFXButton layoutX="226.0" layoutY="525.0" onAction="#IconSendOnAction" opacity="0.0" prefHeight="59.0" prefWidth="42.0" />
+            <VBox fx:id="vboxChat" layoutX="27.0" layoutY="57.0" prefHeight="456.0" prefWidth="347.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
